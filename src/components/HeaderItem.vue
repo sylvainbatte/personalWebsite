@@ -13,7 +13,7 @@ defineProps({
 
 <template>
     <div>
-        <a :href="link">{{ name }}</a>
+        <RouterLink :to="link">{{ name }}</RouterLink>
     </div>
 </template>
 

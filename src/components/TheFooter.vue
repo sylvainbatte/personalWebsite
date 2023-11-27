@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <p>Sylvain Batte ©</p>
+        <p>Sylvain Batte</p>
     </footer>
 </template>
 
