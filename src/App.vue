@@ -4,13 +4,11 @@ import TheFooter from './components/TheFooter.vue';
 </script>
 
 <template>
-  <TheHeader />
-  <RouterView></RouterView>
-  <TheFooter />
+    <TheHeader />
+    <RouterView></RouterView>
+    <TheFooter />
 </template>
 
 <style scoped>
-* {
-  display: block;
-}
+
 </style>

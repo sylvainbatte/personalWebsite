@@ -1,17 +1,10 @@
 @import './base.css';
 
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-
+  height: 100vh;
   font-weight: normal;
-}
-
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(244, 175, 175);
+} 

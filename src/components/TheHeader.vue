@@ -14,9 +14,18 @@
 </template>
 
 <style scoped>
-    *{
+    header {
         display: flex;
-        justify-content: space-around;
         background-color: yellowgreen;
+        height: 10vh;
+    }
+
+    nav {
+        margin: auto;
+        justify-content: space-around;
+        display: flex;
+        background-color: yellow;
+        width: 80vw;
+        height: 6vh;
     }
 </style>

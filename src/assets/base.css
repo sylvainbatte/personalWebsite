@@ -1,20 +1,24 @@
-:root {
+/* :root {
   --primary-color: #c0fe86;
 
   --text-primary: #393939;
 
   --backgroup-primary: rgb(250, 251, 179);
-}
+} */
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
   margin: 0;
+  padding: 0;
   font-weight: normal;
 }
 
-body {
+body, html {
+  min-height: 100vh;
+}
+
+/* body {
   min-height: 100vh;
   color: var(--text-primary);
   background: var(--backgroup-primary);
@@ -39,4 +43,4 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+} */
