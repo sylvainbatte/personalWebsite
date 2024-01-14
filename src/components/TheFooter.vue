@@ -6,7 +6,7 @@
 
 <style scoped>
     *{
-        display: flex;
+        display: none;
         background-color: aquamarine;
     }
 </style>
