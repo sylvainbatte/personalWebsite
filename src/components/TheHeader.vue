@@ -1,5 +1,10 @@
 <script setup>
     import HeaderItem from './HeaderItem.vue';
+
+    const updateCheckbox = () => {
+        const checkbox = document.getElementById('active');
+        checkbox.checked = false;
+    }
 </script>
 
 <template>
@@ -8,10 +13,10 @@
         <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
         <div class="wrapper">
         <ul>
-            <li><HeaderItem link="/" name="Accueil"/></li>
-            <li><HeaderItem link="/projects" name="Projets"/></li>
-            <li><HeaderItem link="/photos" name="Photos"/></li>
-            <li><HeaderItem link="/contact" name="Contact"/></li>
+            <li><HeaderItem link="/" name="Accueil" @clicked="updateCheckbox"/></li>
+            <li><HeaderItem link="/projects" name="Projets" @clicked="updateCheckbox"/></li>
+            <li><HeaderItem link="/photos" name="Photos" @clicked="updateCheckbox"/></li>
+            <li><HeaderItem link="/contact" name="Contact" @clicked="updateCheckbox"/></li>
         </ul>
         </div>
     </header>
@@ -21,6 +26,7 @@
 
     .wrapper{
         position: fixed;
+        z-index: 1000;
         top: 0;
         left: 0;
         height: 100%;
@@ -33,8 +39,8 @@
         clip-path: circle(75%);
     }
     .menu-btn{
-        position: absolute;
-        z-index: 2;
+        position: fixed;
+        z-index: 1001;
         right: 20px;
         top: 20px;
         height: 50px;

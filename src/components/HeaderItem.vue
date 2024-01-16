@@ -13,7 +13,7 @@ defineProps({
 
 <template>
     <div>
-        <RouterLink :to="link">{{ name }}</RouterLink>
+        <RouterLink :to="link" @click="$emit('clicked')">{{ name }}</RouterLink>
     </div>
 </template>
 

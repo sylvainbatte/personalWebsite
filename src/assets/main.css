@@ -1,10 +1,18 @@
-@import './base.css';
 
-#app {
-  height: 100vh;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
   font-weight: normal;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+}
+
+body, html {
+  min-height: 100vh;
   background-color: rgb(244, 175, 175);
-} 
+}
+
+
+:root {
+    --main-text-color: #333439;
+}
