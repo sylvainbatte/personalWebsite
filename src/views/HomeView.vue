@@ -27,32 +27,32 @@
             <div class="card">
                 <h2>Actuellement</h2>
                 <h3>Développeur Back-End</h3>
-                <p>Développement d'application web mobile à destination des campings</p>
+                <h5>Développement d'application web mobile à destination des campings</h5>
             </div>
             <div class="card">
                 <h2>2023</h2>
                 <h3>LP APIDAE</h3>
-                <p>Obtention d'un dîplome de licence professionnelle</p>
+                <h5>Obtention d'un dîplome de licence professionnelle</h5>
             </div>
             <div class="card">
                 <h2>2022-2023</h2>
                 <h3>Alternant développeur web</h3>
-                <p>Développement et maintenant de site e-commerce et outils internes</p>
+                <h5>Développement et maintenant de site e-commerce et outils internes</h5>
             </div>
             <div class="card">
                 <h2>2022</h2>
                 <h3>DUT Informatique</h3>
-                <p>Obtention d'un dîplome universitaire de technologie</p>
+                <h5>Obtention d'un dîplome universitaire de technologie</h5>
             </div>
             <div class="card">
                 <h2>Avril 2022</h2>
                 <h3>Stage développement web</h3>
-                <p>Développement d'un site PHP from scratch durant un stage de 3 mois</p>
+                <h5>Développement d'un site PHP from scratch durant un stage de 3 mois</h5>
             </div>
             <div class="card">
                 <h2>2020</h2>
                 <h3>Baccalauréat scientifique</h3>
-                <p>Option Science de l'ingénieur<br>Mention assez bien</p>
+                <h5>Option Science de l'ingénieur<br>Mention assez bien</h5>
             </div>
         </div>
 
@@ -142,17 +142,12 @@ h1 {
                 margin-bottom: 5px;
             }
 
-            p {
+            h5 {
                 font-style: italic;
                 font-size: 12px;
                 margin-left: 25px;
                 width: 80%;
             }
-        }
-
-        .card:hover {
-            background: #ECF1F524;
-            transition: 0.2s;
         }
 
         .card:nth-child(2n) {

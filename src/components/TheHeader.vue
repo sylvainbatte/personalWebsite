@@ -38,7 +38,9 @@
     #active:checked ~ .wrapper{
         clip-path: circle(75%);
     }
+
     .menu-btn{
+        cursor: none;
         position: fixed;
         z-index: 1001;
         right: 20px;
@@ -47,9 +49,8 @@
         width: 50px;
         text-align: center;
         line-height: 50px;
-        border-radius: 50%;
+        border-radius: 10px;
         font-size: 20px;
-        cursor: pointer;
         background: #ABC;
         transition: all 0.3s;
     }
