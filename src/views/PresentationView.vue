@@ -11,7 +11,7 @@
             <p>En attente d'écriture</p>
         </div>
 
-        <img src="../assets/self_portrait.JPG" alt="Self portrait" id="selfPortrait">
+        <img src="../assets/self_portrait.jpg" alt="Self portrait" id="selfPortrait">
 
         <div class="container">
 
