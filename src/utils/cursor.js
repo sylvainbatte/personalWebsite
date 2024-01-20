@@ -11,8 +11,8 @@ export function setupCursor() {
             isCursorLocked = true;
             rect = target.getBoundingClientRect();
             cursor.classList.add("is-locked");
-            cursor.style.setProperty("--top", rect.top + rect.height / 2 + "px");
-            cursor.style.setProperty("--left", rect.left + rect.width / 2 + "px");
+            cursor.style.setProperty("--top", window.scrollY + rect.top + rect.height / 2 + "px");
+            cursor.style.setProperty("--left", window.scrollX + rect.left + rect.width / 2 + "px");
             cursor.style.setProperty("--width", rect.width + "px");
             cursor.style.setProperty("--height", rect.height + "px");
             target.style.setProperty("--scale", 1.05);
@@ -56,8 +56,8 @@ export function setupCursor() {
     });
     document.addEventListener("mousemove", ({ x, y }) => {
         if (!isCursorLocked) {
-            cursor.style.setProperty("--top", y + "px");
-            cursor.style.setProperty("--left", x + "px");
+            cursor.style.setProperty("--top", y + window.scrollY + "px");
+            cursor.style.setProperty("--left", x + window.scrollX + "px");
         }
     });
 
