@@ -10,11 +10,21 @@
 
 body, html {
   min-height: 100vh;
-  background-color: rgb(244, 175, 175);
   cursor: none;
 }
 
+.responsive-container {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 2em;
+  gap: 4em;
+}
 
 :root {
     --main-text-color: #333439;
+    --main-accent-color: #ABC;
+    --main-background-color: #ABC2;
 }

@@ -13,7 +13,7 @@
         <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
         <div class="wrapper">
         <ul>
-            <li><HeaderItem link="/" name="Accueil" @clicked="updateCheckbox"/></li>
+            <li><HeaderItem link="/presentation" name="Présentation" @clicked="updateCheckbox"/></li>
             <li><HeaderItem link="/projects" name="Projets" @clicked="updateCheckbox"/></li>
             <li><HeaderItem link="/photos" name="Photos" @clicked="updateCheckbox"/></li>
             <li><HeaderItem link="/contact" name="Contact" @clicked="updateCheckbox"/></li>
@@ -31,7 +31,7 @@
         left: 0;
         height: 100%;
         width: 100%;
-        background: linear-gradient(-135deg, #ABC, rgb(197, 212, 227));
+        background: linear-gradient(-135deg, var(--main-accent-color), rgb(197, 212, 227));
         clip-path: circle(25px at calc(100% - 45px) 45px);
         transition: all 0.3s ease-in-out;
     }
@@ -51,8 +51,9 @@
         line-height: 50px;
         border-radius: 10px;
         font-size: 20px;
-        background: #ABC;
+        background: var(--main-accent-color);
         transition: all 0.3s;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
     }
     #active ~ .menu-btn i:before {
         content: "\2630";
@@ -60,6 +61,11 @@
     #active:checked ~ .menu-btn i:before{
         content: "\26CC";
     }
+    #active:checked ~ .menu-btn {
+        box-shadow: none;
+        background-color: transparent;
+    }
+
     .wrapper ul{
         position: absolute;
         top: 50%;
