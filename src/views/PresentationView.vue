@@ -2,7 +2,7 @@
 </script>
 
 <template>
-    <h1 id="title">Sylvain Batte</h1>
+    <h1 class="title">Sylvain Batte</h1>
 
     <div class="responsive-container">
 
@@ -89,17 +89,6 @@
   }
 }
 
-@keyframes topEntrance {
-  0% {
-    margin-top: -1em;
-    opacity: 0%;
-  }
-
-  100% {
-    opacity: 100%;
-  }
-}
-
 h2 {
     font-weight: bold;
     font-size: 20px;
@@ -111,18 +100,6 @@ p {
     font-size: 14px;
     margin: 10px auto;
     width: 80%;
-}
-
-#title {
-    width: 320px;
-    text-align: center;
-    margin: 2em auto 1em;
-    padding: 10px 0;
-    font-size: 3em;
-    border-radius: 15px;
-    background: rgba(95, 102, 173, 0.03);
-    box-shadow: 20px 20px 53px -20px rgba(95, 102, 173, 0.5);
-    animation: topEntrance 2s;
 }
 
 #selfPortrait {

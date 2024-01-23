@@ -1,5 +1,11 @@
 @import "./cursor.css";
 
+:root {
+    --main-text-color: #333439;
+    --main-accent-color: #ABC;
+    --main-background-color: #FAFAFA;
+}
+
 *,
 *::before,
 *::after {
@@ -23,8 +29,25 @@ body, html {
   gap: 4em;
 }
 
-:root {
-    --main-text-color: #333439;
-    --main-accent-color: #ABC;
-    --main-background-color: #FAFAFA;
+.title {
+    width: 320px;
+    text-align: center;
+    margin: 2em auto 1em;
+    padding: 10px 0;
+    font-size: 3em;
+    border-radius: 15px;
+    background: rgba(95, 102, 173, 0.03);
+    box-shadow: 20px 20px 53px -20px rgba(95, 102, 173, 0.5);
+    animation: topEntrance 2s;
+}
+
+@keyframes topEntrance {
+  0% {
+    margin-top: -1em;
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
 }
