@@ -29,14 +29,25 @@
         z-index: 1000;
         top: 0;
         left: 0;
-        height: 100%;
-        width: 100%;
+        height: 100vh;
+        width: 100vw;
         background: linear-gradient(-135deg, var(--main-accent-color), rgb(197, 212, 227));
         clip-path: circle(25px at calc(100% - 45px) 45px);
-        transition: all 0.3s ease-in-out;
-    }
-    #active:checked ~ .wrapper{
-        clip-path: circle(75%);
+        transition: all 0.3s ease-out;
+        opacity: 0;
+
+        ul {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            list-style: none;
+            text-align: center;
+
+            li {
+                margin: 15px 0;
+            }
+        }
     }
 
     .menu-btn{
@@ -55,6 +66,7 @@
         transition: all 0.3s;
         box-shadow: 0 5px 10px rgba(0,0,0,0.2);
     }
+    
     #active ~ .menu-btn i:before {
         content: "\2630";
     }
@@ -65,31 +77,13 @@
         box-shadow: none;
         background-color: transparent;
     }
-
-    .wrapper ul{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        list-style: none;
-        text-align: center;
-    }
-    .wrapper ul li{
-        margin: 15px 0;
+    #active:checked ~ .wrapper{
+        clip-path: circle(75%);
+        opacity: 1;
     }
     
-    input[type="checkbox"]{
+    header input[type="checkbox"]{
         display: none;
-    }
-
-
-    @keyframes rotate {
-        0%{
-            filter: hue-rotate(0deg);
-        }
-        100%{
-            filter: hue-rotate(360deg);
-        }
     }
 
 </style>

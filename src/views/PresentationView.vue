@@ -8,14 +8,23 @@
 
         <div id="description">
             <h2>Présentation</h2>
-            <p>En attente d'écriture</p>
+            <p>
+                Développeur web et photographe amateur, ce site est là pour présenter mes différents projets,
+                qu'ils soient liés au développement ou à la photographie
+                <br><br>
+                Le site est développé entièrement en VueJS par mes soins, et est à l'heure actuelle toujours
+                en développement.
+                <br>
+                Le design est donc succeptible de changer, et de nouvelles fonctionnalitées peuvent être ajoutées.
+                Il se peut également que certains bugs se produisent.
+            </p>
         </div>
 
         <img src="../assets/self_portrait.jpg" alt="Self portrait" id="selfPortrait">
 
-        <div class="container">
+        <div id="container">
 
-            <div class="lines">
+            <div id="lines">
                 <div class="dot"></div>
                 <div class="line"></div>
                 <div class="dot"></div>
@@ -30,36 +39,36 @@
                 <div class="line"></div>
             </div>
 
-            <div class="cards">
+            <div id="cards">
                 <div class="card">
                     <h2>Actuellement</h2>
                     <h3>Développeur Back-End</h3>
-                    <h5>Développement d'application web mobile à destination des campings</h5>
+                    <p>Développement d'application web mobile à destination des campings</p>
                 </div>
                 <div class="card">
                     <h2>2023</h2>
                     <h3>LP APIDAE</h3>
-                    <h5>Obtention d'un dîplome de licence professionnelle</h5>
+                    <p>Obtention d'un dîplome de licence professionnelle</p>
                 </div>
                 <div class="card">
                     <h2>2022-2023</h2>
                     <h3>Alternant développeur web</h3>
-                    <h5>Développement et maintenant de site e-commerce et outils internes</h5>
+                    <p>Développement et maintenant de site e-commerce et outils internes</p>
                 </div>
                 <div class="card">
                     <h2>2022</h2>
                     <h3>DUT Informatique</h3>
-                    <h5>Obtention d'un dîplome universitaire de technologie</h5>
+                    <p>Obtention d'un dîplome universitaire de technologie</p>
                 </div>
                 <div class="card">
                     <h2>Avril 2022</h2>
                     <h3>Stage développement web</h3>
-                    <h5>Développement d'un site PHP from scratch durant un stage de 3 mois</h5>
+                    <p>Développement d'un site PHP from scratch durant un stage de 3 mois</p>
                 </div>
                 <div class="card">
                     <h2>2020</h2>
                     <h3>Baccalauréat scientifique</h3>
-                    <h5>Option Science de l'ingénieur<br>Mention assez bien</h5>
+                    <p>Option Science de l'ingénieur<br>Mention assez bien</p>
                 </div>
             </div>
         </div>
@@ -80,17 +89,6 @@
   }
 }
 
-@keyframes bottomEntrance {
-  0% {
-    margin-top: 300px;
-    opacity: 0%;
-  }
-
-  100% {
-    opacity: 100%;
-  }
-}
-
 @keyframes topEntrance {
   0% {
     margin-top: -1em;
@@ -100,6 +98,19 @@
   100% {
     opacity: 100%;
   }
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 19px;
+}
+
+p {
+    font-style: italic;
+    font-size: 14px;
+    margin: 10px auto;
+    width: 80%;
 }
 
 #title {
@@ -118,7 +129,6 @@
     width: 340px;
     box-shadow: 20px 20px 53px -20px rgba(95, 102, 173);
     border-radius: 20px;
-    animation: bottomEntrance 2s;
 }
 
 #description {
@@ -127,35 +137,28 @@
 
     box-shadow: 0px 20px 53px -30px rgba(95, 102, 173, 0.5);
     border-radius: 10px;
-    animation: rightEntrance 2s;
 
     h2 {
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 19px;
-        margin-top: 25px;
         text-align: center;
+        margin-top: 25px;
     }
 
     p {
         text-align: center;
-        font-style: italic;
-        font-size: 12px;
-        margin: 10px auto;
-        width: 90%;
+        font-size: 15px;
     }
 }
 
-.container {
+#container {
     width: 340px;
-    background: var(--main-background-color);
+    background: #ABC2;
 
     box-shadow: 0px 20px 53px -30px rgba(95, 102, 173, 0.5);
     border-radius: 10px;
 
     display: flex;
 
-    .lines {
+    #lines {
         margin-left: 40px;
         margin-top: 6px;
 
@@ -174,17 +177,16 @@
         }
     }
 
-    .cards {
+    #cards {
 
         margin-left: 12px;
         transform: translateY(-50px);
 
         .card {
             width: 230px;
-            height: 93px;
+            height: 100px;
             padding-top: 25px;
-            background: #fafafa;
-            box-shadow: 0 2px 2px 0 #eeeeee40;
+            background: var(--main-background-color);
             border-radius: 10px;
 
             box-shadow: 0px 16px 15px -10px rgba(105, 96, 215, 0.0944602);
@@ -193,31 +195,26 @@
 
             animation: rightEntrance 2s;
 
-            h2 {
-                font-weight: bold;
-                font-size: 18px;
-                line-height: 19px;
+            h2, h3, p {
                 margin-left: 25px;
             }
 
             h3 {
                 font-weight: bold;
-                font-size: 12px;
+                font-size: 14px;
                 line-height: 16px;
-                margin-left: 25px;
                 margin-bottom: 5px;
             }
 
-            h5 {
-                font-style: italic;
-                font-size: 12px;
-                margin-left: 25px;
-                width: 80%;
+            p {
+                margin-top: 5;
+                font-size: 14px;
+                line-height: 13px;
             }
         }
 
         .card:nth-child(2n) {
-            margin-left: 15px;
+            margin-left: 2em;
         }
     }
 }
