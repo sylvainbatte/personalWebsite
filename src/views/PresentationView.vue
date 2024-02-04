@@ -104,7 +104,7 @@ p {
 
 #selfPortrait {
     width: 340px;
-    box-shadow: 20px 20px 53px -20px rgba(95, 102, 173);
+    box-shadow: 10px 10px 40px rgba(95, 102, 173);
     border-radius: 20px;
 }
 
@@ -112,7 +112,8 @@ p {
     width: 340px;
     background: var(--main-background-color);
 
-    box-shadow: 0px 20px 53px -30px rgba(95, 102, 173, 0.5);
+    
+    box-shadow: 20px 20px 40px -20px rgba(95, 102, 173, 0.5);
     border-radius: 10px;
 
     h2 {
@@ -130,14 +131,15 @@ p {
     width: 340px;
     background: #ABC2;
 
-    box-shadow: 0px 20px 53px -30px rgba(95, 102, 173, 0.5);
+    box-shadow: 20px 20px 40px -25px rgba(95, 102, 173, 0.5);
     border-radius: 10px;
+    margin-bottom: 40px;
 
     display: flex;
 
     #lines {
         margin-left: 40px;
-        margin-top: 6px;
+        margin-top: 40px;
 
         .dot {
             width: 14px;
@@ -157,6 +159,7 @@ p {
     #cards {
 
         margin-left: 12px;
+        margin-top: 35px;
         transform: translateY(-50px);
 
         .card {

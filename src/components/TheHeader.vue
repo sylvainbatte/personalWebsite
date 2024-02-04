@@ -62,9 +62,9 @@
         line-height: 50px;
         border-radius: 10px;
         font-size: 20px;
-        background: var(--main-accent-color);
         transition: all 0.3s;
-        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        background: var(--main-accent-color);
+        box-shadow: 3px 3px 6px #c5c5c5, -3px -3px 6px #ffffff;
     }
     
     #active ~ .menu-btn i:before {

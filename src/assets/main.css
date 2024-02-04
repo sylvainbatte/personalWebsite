@@ -1,9 +1,10 @@
 @import "./cursor.css";
 
 :root {
-    --main-text-color: #333439;
-    --main-accent-color: #ABC;
-    --main-background-color: #FAFAFA;
+  --main-text-color: #333439;
+  --main-text-accent-color: rgb(147, 165, 182);
+  --main-accent-color: #ABC;
+  --main-background-color: #FAFAFA;
 }
 
 *,
@@ -30,15 +31,21 @@ body, html {
 }
 
 .title {
+  width: 60%;
+  text-align: center;
+  margin: 2em auto 1em;
+  padding: 10px 0;
+  font-size: 3em;
+  border-radius: 15px;
+  background: rgba(95, 102, 173, 0.03);
+  box-shadow: 20px 10px 40px -20px rgba(95, 102, 173, 0.5);
+  animation: topEntrance 2s;
+}
+
+@media screen and (max-width: 500px) {
+  .title {
     width: 320px;
-    text-align: center;
-    margin: 2em auto 1em;
-    padding: 10px 0;
-    font-size: 3em;
-    border-radius: 15px;
-    background: rgba(95, 102, 173, 0.03);
-    box-shadow: 20px 20px 53px -20px rgba(95, 102, 173, 0.5);
-    animation: topEntrance 2s;
+  }
 }
 
 @keyframes topEntrance {
