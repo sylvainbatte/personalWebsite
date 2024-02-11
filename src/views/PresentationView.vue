@@ -89,6 +89,7 @@
   }
 }
 
+
 h2 {
     font-weight: bold;
     font-size: 20px;
@@ -108,6 +109,7 @@ p {
     border-radius: 20px;
 }
 
+
 #description {
     width: 340px;
     background: var(--main-background-color);
@@ -123,7 +125,24 @@ p {
 
     p {
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #description p {
         font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 501px) {
+    #description h2 {
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+
+    #description p {
+        font-size: 18px;
+        margin-bottom: 20px;
     }
 }
 
@@ -149,10 +168,14 @@ p {
         }
 
         .line {
-            height: 103px;
+            height: 120px;
             width: 2px;
             background: var(--main-accent-color);
             margin-left: 5.3px;
+        }
+
+        .line:last-child {
+            height: 75px;
         }
     }
 
@@ -160,9 +183,10 @@ p {
 
         margin-left: 12px;
         margin-top: 35px;
-        transform: translateY(-50px);
+        height: 760px;
 
         .card {
+            transform: translateY(-60px);
             width: 230px;
             height: 100px;
             padding-top: 25px;

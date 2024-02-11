@@ -4,7 +4,7 @@
   --main-text-color: #333439;
   --main-text-accent-color: rgb(147, 165, 182);
   --main-accent-color: #ABC;
-  --main-background-color: #FAFAFA;
+  --main-background-color: #f3f3f3;
 }
 
 *,
@@ -18,6 +18,7 @@
 body, html {
   min-height: 100vh;
   cursor: none;
+  background-color: #eeeeee;
 }
 
 .responsive-container {
@@ -45,6 +46,8 @@ body, html {
 @media screen and (max-width: 500px) {
   .title {
     width: 320px;
+    font-size: 2em;
+    margin-top: 3em;
   }
 }
 
