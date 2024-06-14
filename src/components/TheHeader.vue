@@ -1,16 +1,32 @@
 <script setup>
     import HeaderItem from './HeaderItem.vue';
+    import swooshEnterAudioFile from '@/assets/swoosh-enter.mp3';
+    import swooshExitAudioFile from '@/assets/swoosh-exit.mp3';
+
+    var swooshEnterAudio = new Audio(swooshEnterAudioFile);
+    var shooshExitAudio = new Audio(swooshExitAudioFile);
 
     const updateCheckbox = () => {
+        playAudioOnClick();
         const checkbox = document.getElementById('active');
         checkbox.checked = false;
+    }
+
+    const playAudioOnClick = () => {
+        const checkbox = document.getElementById('active');
+
+        if (checkbox.checked) {
+            shooshExitAudio.play();
+        } else {
+            swooshEnterAudio.play();
+        }
     }
 </script>
 
 <template>
     <header>
         <input type="checkbox" id="active">
-        <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+        <label for="active" class="menu-btn" @click="playAudioOnClick"><i class="fas fa-bars"></i></label>
         <div class="wrapper">
         <ul>
             <li><HeaderItem link="/presentation" name="Présentation" @clicked="updateCheckbox"/></li>

@@ -1,4 +1,9 @@
 <script setup>
+
+import clickAudioFile from '@/assets/click.mp3';
+
+var clickAudio = new Audio(clickAudioFile);
+
 defineProps({
   label: {
     type: String,
@@ -9,11 +14,12 @@ defineProps({
     required: true
   }
 })
+
 </script>
 
 <template>
   <div>
-    <a :href="link" target="_blank">{{ label }}</a>
+    <a :href="link" target="_blank" @click="clickAudio.play">{{ label }}</a>
   </div>
 </template>
 
