@@ -1,0 +1,6 @@
+{
+    "descriptions": {
+        "timer": "A simple timer that counts down from a specified time.",
+        "string": "A simple string that can be used to display text."
+    }
+}
