@@ -1,6 +1,21 @@
 {
-    "descriptions": {
-        "timer": "A simple timer that counts down from a specified time.",
-        "string": "A simple string that can be used to display text."
+    "descriptions" : {
+        "portfolio" : "Ce portfolio est mon projet personnel actuellement. Je m'en sert pour développer mes compétences en design (et CSS) ainsi qu'en VueJS. Cela me permet également de tester différentes idées de design ou de fonctionnalitées qui me passent par la tête. Ce site permet de présenter mon parcous, mes différents autres projets, une partie dédiée à mes photos, ainsi qu'une partie contact avec mes différents réseaux.",
+        "timer" : "Ce projet a pour but de créer un site permettant d'utiliser différents types de minuteurs, notamment un timer permettant de mettre en place la technique Pomodoro. Il sera aussi possible de créer d'autres types de minuteurs spécifiques pour d'autre utilisations, et un système de son et/ou de notifications permettra de prévenir l'utilisateur d'un franchissement d'étape ou de la fin du minuteur.",
+        "textUtil" : "Ce projet a pour vocation à être une sorte d'utilitaire permettant de réaliser différentes opérations sur du texte (comme le mettre en majuscule/minuscule, le découper, mettre la première lettre de chaque mots en majuscule, etc.)."
+    },
+    "status" : {
+        "portfolio" : {
+            "name" : "En cours de développement",
+            "color" : "#ABC"
+        },
+        "timer" : {
+            "name" : "En attente de développement",
+            "color" : "#FFBF6D"
+        },
+        "textUtil" : {
+            "name" : "En attente de développement",
+            "color" : "#FFBF6D"
+        }
     }
 }

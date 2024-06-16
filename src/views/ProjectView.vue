@@ -1,21 +1,16 @@
 <script setup>
 import ProjectCardItem from '../components/ProjectCardItem.vue';
 
-// TODO : aller chercher les valeurs de data dans un fichier json
-let data = {
-    "timer" : "Description timer",
-    "string" : "Description string",
-    "test" : "Description du test"
-}
+import projectData from '../datas/project.json';
 
 </script>
 
 <template>
     <h1 class="title">Mes différents projets</h1>
     <div id="projects">
-        <ProjectCardItem name="Timer" :description="data.timer" />
-        <ProjectCardItem name="String" :description="data.string" />
-        <ProjectCardItem name="Le Test" :description="data.test" />
+        <ProjectCardItem name="Portfolio" :description="projectData.descriptions.portfolio" :status="projectData.status.portfolio"/>
+        <ProjectCardItem name="Chronomètre Pomodoro" :description="projectData.descriptions.timer" :status="projectData.status.timer"/>
+        <ProjectCardItem name="Utilitaire de texte" :description="projectData.descriptions.textUtil" :status="projectData.status.textUtil"/>
     </div>
 </template>
 

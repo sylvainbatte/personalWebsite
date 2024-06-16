@@ -1,14 +1,18 @@
 <script setup>
-defineProps({
-  name: {
-    type: String,
-    required: true
-  },
-  description: {
-    type: String,
-    required: true
-  }
-})
+  defineProps({
+    name: {
+      type: String,
+      required: true
+    },
+    description: {
+      type: String,
+      required: true
+    },
+    status: {
+      type: Object,
+      required: true
+    }
+  });
 </script>
 
 <template>
@@ -16,9 +20,12 @@ defineProps({
     <div class="card">
       <div class="card-front">
           <h2>{{ name }}</h2>
+          <img src="../assets/repeter.png" alt="Carte retournable">
       </div>
       <div class="card-back">
           <p>{{ description }}</p>
+          <div class="projectStatus">{{ status.name }}</div>
+          <img src="../assets/repeter.png" alt="Carte retournable">
       </div>
     </div>
   </div>
@@ -53,7 +60,7 @@ defineProps({
 
     margin-bottom: 30px;
     perspective: 1000px;
-    height: 20vh;
+    height: 25vh;
 
     .card {
       position: relative;
@@ -77,15 +84,48 @@ defineProps({
         display: flex;
         align-items: center;
         justify-content: center;
+
+        img {
+          width: 1em;
+          height: 1em;
+          position: absolute;
+          top: 1em;
+          right: 1em;
+          filter: invert(18%) sepia(9%) saturate(499%) hue-rotate(192deg) brightness(86%) contrast(86%);
+        }
       }
       
       .card-back {
         background-color: var(--main-text-color);
         color: var(--main-background-color);
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         transform: rotateX(180deg);
+
+        p {
+          text-align: center;
+          padding: 0 3em;
+          margin-bottom: 1em;
+          color: var(--main-text-white-color);
+        }
+
+        .projectStatus {
+          background-color: v-bind(status.color);
+          color: var(--main-text-color);
+          padding: 0.5em 1em;
+          border-radius: 1em;
+        }
+
+        img {
+          width: 1em;
+          height: 1em;
+          position: absolute;
+          bottom: 1em;
+          right: 1em;
+          filter: invert(91%) sepia(18%) saturate(325%) hue-rotate(339deg) brightness(104%) contrast(102%);
+        }
       }
     }
   }
