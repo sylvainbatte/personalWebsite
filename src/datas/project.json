@@ -1,6 +1,7 @@
 {
     "descriptions" : {
         "portfolio" : "Ce portfolio est mon projet personnel actuellement. Je m'en sert pour développer mes compétences en design (et CSS) ainsi qu'en VueJS. Cela me permet également de tester différentes idées de design ou de fonctionnalitées qui me passent par la tête. Ce site permet de présenter mon parcous, mes différents autres projets, une partie dédiée à mes photos, ainsi qu'une partie contact avec mes différents réseaux.",
+        "github" : "J'aimerais participer à différentes améliorations ou résolutions de bugs de projets GitHub open-sources. Cela me permettrait de découvrir de nouveaux projets, de nouvelles façons de coder, ainsi que de m'améliorer. Je pense chercher un projet pour lequel participer en parallèle de mes projets personnels, lorsque j'aurais fini le développement de ce portfolio.",
         "timer" : "Ce projet a pour but de créer un site permettant d'utiliser différents types de minuteurs, notamment un timer permettant de mettre en place la technique Pomodoro. Il sera aussi possible de créer d'autres types de minuteurs spécifiques pour d'autre utilisations, et un système de son et/ou de notifications permettra de prévenir l'utilisateur d'un franchissement d'étape ou de la fin du minuteur.",
         "textUtil" : "Ce projet a pour vocation à être une sorte d'utilitaire permettant de réaliser différentes opérations sur du texte (comme le mettre en majuscule/minuscule, le découper, mettre la première lettre de chaque mots en majuscule, etc.)."
     },
@@ -8,6 +9,10 @@
         "portfolio" : {
             "name" : "En cours de développement",
             "color" : "#ABC"
+        },
+        "github" : {
+            "name" : "En attente de développement",
+            "color" : "#FFBF6D"
         },
         "timer" : {
             "name" : "En attente de développement",
