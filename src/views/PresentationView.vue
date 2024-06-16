@@ -115,7 +115,7 @@ p {
     background: var(--main-background-color);
 
     
-    box-shadow: 20px 20px 40px -20px rgba(95, 102, 173, 0.5);
+    box-shadow: 20px 20px 40px -20px var(--main-shadow-color);
     border-radius: 10px;
 
     h2 {
@@ -150,7 +150,7 @@ p {
     width: 340px;
     background: #ABC2;
 
-    box-shadow: 20px 20px 40px -25px rgba(95, 102, 173, 0.5);
+    box-shadow: 20px 20px 40px -25px var(--main-shadow-color);
     border-radius: 10px;
     margin-bottom: 40px;
 

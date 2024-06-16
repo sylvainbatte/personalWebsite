@@ -2,9 +2,11 @@
 
 :root {
   --main-text-color: #333439;
+  --main-text-white-color: #FDF5DD;
   --main-text-accent-color: rgb(147, 165, 182);
   --main-accent-color: #ABC;
   --main-background-color: #f3f3f3;
+  --main-shadow-color: rgba(95, 102, 173, 0.5);
 }
 
 *,
@@ -39,7 +41,7 @@ body, html {
   font-size: 3em;
   border-radius: 15px;
   background: rgba(95, 102, 173, 0.03);
-  box-shadow: 20px 10px 40px -20px rgba(95, 102, 173, 0.5);
+  box-shadow: 20px 10px 40px -20px var(--main-shadow-color);
   animation: topEntrance 2s;
 }
 

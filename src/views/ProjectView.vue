@@ -1,14 +1,25 @@
 <script setup>
+import ProjectCardItem from '../components/ProjectCardItem.vue';
+
+import projectData from '../datas/project.json';
+
 </script>
 
 <template>
-    <h1>En attente de développement</h1>
+    <h1 class="title">Mes différents projets</h1>
+    <div id="projects">
+        <ProjectCardItem name="Portfolio" :description="projectData.descriptions.portfolio" :status="projectData.status.portfolio"/>
+        <ProjectCardItem name="Chronomètre Pomodoro" :description="projectData.descriptions.timer" :status="projectData.status.timer"/>
+        <ProjectCardItem name="Utilitaire de texte" :description="projectData.descriptions.textUtil" :status="projectData.status.textUtil"/>
+    </div>
 </template>
 
 <style scoped>
-    h1{
-        text-align: center;
-        margin-top: 5em;
-        font-size: 3em;
+    #projects {
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+        width: 80%;
+        margin: 5em auto 0px;
     }
 </style>
