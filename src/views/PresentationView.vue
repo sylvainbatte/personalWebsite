@@ -9,14 +9,21 @@
         <div id="description">
             <h2>Présentation</h2>
             <p>
-                Développeur web et photographe amateur, ce site est là pour présenter mes différents projets,
-                qu'ils soient liés au développement ou à la photographie
-                <br><br>
+                Développeur web depuis 2ans, ainsi photographe amateur, ce site est là pour me présenter ainsi que mes différents travaux.
+            </p>
+            <p>
+                La page projet est dédiée à mes projets actuels et futurs liés au développement web.
+            </p>
+            <p>
+                La page photo quand à elle sera dédiée à l'affichage de mes différentes photos classées par thèmes ou projets.
+            </p>
+            <p>
                 Le site est développé entièrement en VueJS par mes soins, et est à l'heure actuelle toujours
                 en développement.
-                <br>
+            </p>
+            <p>
                 Le design est donc succeptible de changer, et de nouvelles fonctionnalitées peuvent être ajoutées.
-                Il se peut également que certains bugs se produisent.
+                Il se peut également que certains bugs de design se produisent.
             </p>
         </div>
 
