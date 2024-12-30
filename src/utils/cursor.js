@@ -69,6 +69,10 @@ export function setupCursor() {
         cursorLockHandler(menuBtn);
     });
 
+    document.querySelectorAll(".sound-status").forEach((soundStatus) => {
+        cursorLockHandler(soundStatus);
+    });
+
     document.querySelectorAll("p").forEach((p) => {
         p.addEventListener("mouseover", () => {
             cursor.style.setProperty("--width", "0.2em");

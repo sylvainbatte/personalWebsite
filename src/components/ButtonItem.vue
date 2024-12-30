@@ -1,6 +1,8 @@
 <script setup>
 
 import clickAudioFile from '@/assets/click.mp3';
+import { useStore } from 'vuex';
+import { computed } from 'vue';
 
 var clickAudio = new Audio(clickAudioFile);
 
@@ -15,11 +17,20 @@ defineProps({
   }
 })
 
+const store = useStore();
+const isSoundEnabled = computed(() => store.getters.getSoundStatus);
+
+const playAudioOnClick = () => {
+  if (isSoundEnabled.value) {  
+    clickAudio.play();
+  }
+}
+
 </script>
 
 <template>
   <div>
-    <a :href="link" target="_blank" @click="clickAudio.play">{{ label }}</a>
+    <a :href="link" target="_blank" @click="playAudioOnClick">{{ label }}</a>
   </div>
 </template>
 

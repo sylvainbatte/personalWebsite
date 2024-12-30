@@ -2,6 +2,8 @@
     import HeaderItem from './HeaderItem.vue';
     import swooshEnterAudioFile from '@/assets/swoosh-enter.mp3';
     import swooshExitAudioFile from '@/assets/swoosh-exit.mp3';
+    import { useStore } from 'vuex';
+    import { computed } from 'vue';
 
     var swooshEnterAudio = new Audio(swooshEnterAudioFile);
     var shooshExitAudio = new Audio(swooshExitAudioFile);
@@ -12,13 +14,17 @@
         checkbox.checked = false;
     }
 
-    const playAudioOnClick = () => {
-        const checkbox = document.getElementById('active');
+    const store = useStore();
+    const isSoundEnabled = computed(() => store.getters.getSoundStatus);
 
-        if (checkbox.checked) {
-            shooshExitAudio.play();
-        } else {
-            swooshEnterAudio.play();
+    const playAudioOnClick = () => {
+        if (isSoundEnabled.value) {  
+            const checkbox = document.getElementById('active');
+            if (checkbox.checked) {
+                shooshExitAudio.play();
+            } else {
+                swooshEnterAudio.play();
+            }
         }
     }
 </script>
