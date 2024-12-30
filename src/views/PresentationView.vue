@@ -9,7 +9,7 @@
         <div id="description">
             <h2>Présentation</h2>
             <p>
-                Développeur web depuis 2ans, ainsi photographe amateur, ce site est là pour me présenter ainsi que mes différents travaux.
+                Développeur web depuis plus de 2ans, ainsi photographe amateur, ce site est là pour me présenter moi et mes différents travaux.
             </p>
             <p>
                 La page projet est dédiée à mes projets actuels et futurs liés au développement web.
@@ -23,7 +23,7 @@
             </p>
             <p>
                 Le design est donc succeptible de changer, et de nouvelles fonctionnalitées peuvent être ajoutées.
-                Il se peut également que certains bugs de design se produisent.
+                Certains bugs d'affichage peuvent également être présents.
             </p>
         </div>
 
@@ -49,8 +49,8 @@
             <div id="cards">
                 <div class="card">
                     <h2>Actuellement</h2>
-                    <h3>Développeur Back-End</h3>
-                    <p>Développement d'application web mobile à destination des campings</p>
+                    <h3>Développeur Back-End PHP</h3>
+                    <p>Développement d'APIs REST et applications web mobile à destination des campings</p>
                 </div>
                 <div class="card">
                     <h2>2023</h2>
@@ -59,8 +59,8 @@
                 </div>
                 <div class="card">
                     <h2>2022-2023</h2>
-                    <h3>Alternant développeur web</h3>
-                    <p>Développement et maintenant de site e-commerce et outils internes</p>
+                    <h3>Alternant développeur web PHP</h3>
+                    <p>Développement et maintenance de site e-commerce et outils internes</p>
                 </div>
                 <div class="card">
                     <h2>2022</h2>
@@ -70,7 +70,7 @@
                 <div class="card">
                     <h2>Avril 2022</h2>
                     <h3>Stage développement web</h3>
-                    <p>Développement d'un site PHP from scratch durant un stage de 3 mois</p>
+                    <p>Développement d'un site web PHP from scratch durant un stage de 3 mois</p>
                 </div>
                 <div class="card">
                     <h2>2020</h2>
